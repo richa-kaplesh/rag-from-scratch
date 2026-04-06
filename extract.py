@@ -1,8 +1,11 @@
-import fitz  # PyMuPDF
+import fitz
 
-def extract_text(file_path: str) -> str:
+def extract_text(file_path: str) -> list[dict]:
     doc = fitz.open(file_path)
-    full_text = ""
-    for page in doc:
-        full_text += page.get_text()
-    return full_text.strip()
+    pages = []
+    for page_num, page in enumerate(doc):
+        pages.append({
+            "text": page.get_text(),
+            "page_number": page_num + 1
+        })
+    return pages
