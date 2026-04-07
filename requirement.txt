@@ -1,3 +1,6 @@
 pymupdf
 sentence-transformers
 numpy 
+fastapi
+groq
+uvicorn
