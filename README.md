@@ -1,9 +1,4 @@
-Here's the full README:
-
----
-
-```markdown
-# RAG From Scratch 🔍
+# RAG From Scratch 
 
 **No LangChain. No abstractions. Just pure Python, math, and curiosity.**
 
@@ -359,7 +354,3 @@ This is not a quickstart. If you want RAG running in 10 minutes, use LangChain.
 This is for developers who want to know *why* every line exists.
 ```
 
----
-
-**GitHub description:**
-> RAG pipeline built from scratch — no LangChain, no shortcuts. Every stage implemented manually with full explanation of the reasoning behind each decision.
