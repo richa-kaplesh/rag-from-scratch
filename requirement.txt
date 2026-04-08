@@ -4,3 +4,7 @@ numpy
 fastapi
 groq
 uvicorn
+python-dotenv
+streamlit
+python-multipart
+requests

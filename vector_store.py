@@ -1,7 +1,7 @@
 import numpy as np
 
 def cosine_similarity(query_vec:np.ndarray,chunk_vecs:np.ndarray) ->np.ndarray:
-    dot_product = np.dot(query_vec,chunk_vecs)
+    dot_product = np.dot(chunk_vecs,query_vec)
     query_magnitude = np.linalg.norm(query_vec)
     chunk_magnitudes = np.linalg.norm(chunk_vecs, axis=1)
     return  dot_product / (query_magnitude * chunk_magnitudes )
